@@ -1,0 +1,23 @@
+Intro
+- can we overcome "garbage i/p, garbage o/p" ?
+- reconstruction problem loss of phase (speech to text
+- optimal noise removal speech enhancement (current literature PESQ performance is poor)
+- multi-agent audio experiment design (feed-forward deep learning)
+- automatic speech recognition (system identification)
+
+Part 1: Waveform Reconstruction
+- Waveform order (autocorrelation)
+- Griffin-Lim Algorithm
+- PESQ analysis
+- try DC-offset removal first (subtract mean of the wavelet; a properly recorded signal should already have this)
+
+Part 2: Sensor Fusion
+- microphones as an agent, imposing frequency artifacts onto the same speech source
+- no access to reference signal
+- disturbances vs white Gaussian noise
+
+Part 3:
+- cepstrum analysis?
+- linear predictive coefficients
+- GLA reconstructed waveforms vs. Kalman fused waveforms. Does the group reach a consensus?
+- In other words, the big question is, can the Kalman denoising repair the lost phase?
